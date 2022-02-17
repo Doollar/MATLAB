@@ -1,0 +1,32 @@
+ x=sqrt(7)-2i
+
+x =
+
+   2.6458 - 2.0000i
+
+ y=exp(pi2)
+
+y =
+
+    4.8105
+
+ z=(5+cosd(47))(1+abs(x-y))
+
+z =
+
+    1.4395
+
+ who
+
+您的变量为
+
+x  y  z  
+
+ whos
+  Name      Size            Bytes  Class     Attributes
+
+  x         1x1                16  double    complex   
+  y         1x1                 8  double              
+  z         1x1                 8  double              
+
+ 

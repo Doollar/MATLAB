@@ -1,0 +1,148 @@
+>> xm='Central South University'
+
+xm =
+
+    'Central South University'
+
+>> xm(1:3)
+
+ans =
+
+    'Cen'
+
+>> 'I''m a teacher.'
+
+ans =
+
+    'I'm a teacher.'
+
+>> ch=['abcdef';'123456']
+
+ch =
+
+  2×6 char 数组
+
+    'abcdef'
+    '123456'
+
+>> ch(2,3)
+
+ans =
+
+    '3'
+
+>> ch='ABc123d44e56Fg9'
+
+ch =
+
+    'ABc123d44e56Fg9'
+
+>> subch=ch(1:5)
+
+subch =
+
+    'ABc12'
+
+>> revch=ch(end:-1:1)
+
+revch =
+
+    '9gF65e44d321cBA'
+
+>> k=find(ch>='a'&ch<='z')
+
+k =
+
+     3     7    10    14
+
+>> ch(k)=ch(k)-('a'-'A')
+
+ch =
+
+    'ABC123D44E56FG9'
+
+>> length(k)
+
+ans =
+
+     4
+
+>> t=pi
+
+t =
+
+    3.1416
+
+>> m='[t,sin(t),cos(t)]'
+
+m =
+
+    '[t,sin(t),cos(t)]'
+
+>> y=eval(m)
+
+y =
+
+    3.1416    0.0000   -1.0000
+
+>> s1='MATLAB'
+
+s1 =
+
+    'MATLAB'
+
+>> a=abs(s1)
+
+a =
+
+    77    65    84    76    65    66
+
+>> char(a+32)
+
+ans =
+
+    'matlab'
+
+>> 'www0'>='W123'
+
+ans =
+
+  1×4 logical 数组
+
+   1   1   1   0
+
+>> strcmp('wwwo','w123')
+
+ans =
+
+  logical
+
+   0
+
+>> strncmpi('Wwwo','w123',1)
+
+ans =
+
+  logical
+
+   1
+
+>> p=findstr('This is a test','is')
+
+p =
+
+     3     6
+
+>> p=findstr('is','This is a test!')
+
+p =
+
+     3     6
+
+>> result=strrep('This is a test','test','class')
+
+result =
+
+    'This is a class'
+
+>> 
