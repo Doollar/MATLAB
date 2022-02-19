@@ -1,0 +1,33 @@
+msum=0;
+n=0;
+x=input('Enter a number (end in 0):');
+while x~=0
+  msum=msum+x
+  n=n+1
+  x=input('Enter a number (end in 0):');
+end
+if n>0
+  msum
+  mean=msum/n
+end
+
+for n=100:200
+ if rem(n,21)~=0
+   continue
+ end
+ n
+ break
+end
+
+
+m=input('m=');
+p=1:m;
+p(1)=0;
+for i=2:sqrt(m)
+  for j=2*i:i:m
+   p(j)=0
+  end
+end
+n=find(p~=0);
+p(n)
+

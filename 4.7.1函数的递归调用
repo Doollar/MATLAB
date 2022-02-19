@@ -1,0 +1,27 @@
+function f=fact(n)
+if n<=1
+  f=1
+else
+  f=fact(n-1)*n;
+end
+
+n=input('Please input n=')
+s=fact(n);
+disp(s)
+
+(1)首先建立函数文件ffib.m
+function f=ffib(n)
+if n>2
+ f=ffib(n-1)+ffib(n-2);
+else
+ f=1;
+end
+(2)建立脚本文件test.m
+F=[];
+for k=1:20
+ F=[F,ffib(k)*ffib(k)]
+end
+sum(F)
+ffib(20)*ffib(21)
+(3)命令行
+>>test

@@ -1,0 +1,20 @@
+function fout=test(a,b,c)
+if nargin==1
+ fout=a;
+elseif nargin==2
+ fout=a+b;
+elaseif nargin=3
+ fout=(a*b*c)/2;
+end
+
+>>fout=test(2)
+>>fout=test(2,3,2)
+
+function f=wad(x,y)
+global ALPHA BETA
+f=ALPHA*x+BETA*y;
+
+>>global ALPHA BETA
+>>ALPHA=1;
+>>BETA=2;
+>>s=wad(1,2)
